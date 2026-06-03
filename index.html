@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen Café - El mejor café artesanal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-section d-flex flex-column justify-content-between min-vh-100 text-white position-relative">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+            <div class="container container-custom">
+                <a class="navbar-brand me-auto" href="#">
+                    <img src="logo.png" alt="Origen Café" class="logo-img">
+                </a>
+                
+                <div class="navbar-nav ms-auto flex-row gap-4 fs-5">
+    <a class="nav-link active" href="#menu">Menú</a>
+<span class="text-white-50 align-self-center">|</span>
+
+<a class="nav-link" href="#nosotros">Nosotros</a>
+<span class="text-white-50 align-self-center">|</span>
+
+<a class="nav-link" href="#scrum">Scrum</a>
+<span class="text-white-50 align-self-center">|</span>
+
+<a class="nav-link" href="#reservas">Reservas</a>
+<span class="text-white-50 align-self-center">|</span>
+
+<a class="nav-link" href="#orden">Orden</a>
+</div>
+            </div>
+        </nav>
+
+        <div class="container container-custom my-auto text-end pe-md-5">
+            <h1 class="display-3 fw-bold mb-4 main-title">El mejor café artesanal</h1>
+            <a href="#menu" class="btn btn-menu px-5 py-3 fs-4 fw-medium text-dark rounded-pill shadow">
+    Ver menú
+</a>
+        </div>
+
+        <div class="container container-custom d-flex justify-content-between align-items-center pb-4">
+            <div class="social-icons d-flex flex-column gap-3 position-absolute bottom-0 start-0 mb-4 ms-4 ms-md-5">
+                <a href="#" class="text-white fs-3"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+            </div>
+            
+            <div class="ms-auto pe-md-4 text-white-50 fs-3">
+                <i class="bi bi-sparkles"></i>
+            </div>
+        </div>
+
+    </header>
+<section class="menu-section py-5" id="menu">
+        <div class="container container-custom">
+            
+            <div class="text-center mb-5">
+                <h2 class="section-title display-4 fw-bold">Nuestro Menú</h2>
+                <p class="section-subtitle text-muted fs-5">Cada taza cuenta una historia de origen, calidad y tradición artesanal</p>
+                <div class="title-divider mx-auto"></div>
+            </div>
+
+            <div class="category-block mb-5">
+                <h3 class="category-title mb-4"><i class="bi bi-mug-hot-fill me-2"></i>Bebidas Calientes</h3>
+                <div class="row g-4">  
+                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm product-card">
+                            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=300" class="card-img-top product-img" alt="Espresso de Origen">
+                            <div class="card-body d-flex flex-column"> 
+                                <div class="d-flex justify-content-between align-items-center mb-2"> 
+                                    <h4 class="card-title h5 mb-0 fw-bold">Espresso Tradicional</h4>
+                                    <span class="price-badge fs-5 fw-bold">$ 8.000</span>
+                                </div>
+                                <p class="card-text text-muted flex-grow-1">Sabor intenso y crema dorada. Elaborado con granos cultivados a 1.800 msnm en las montañas del Huila, destacando notas de chocolate oscuro y panela.</p>
+                                <span class="badge quality-badge align-self-start"><i class="bi bi-patch-check-fill me-1"></i>Tueste Medio - Premium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm product-card">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-p/0c/57/50/2f/cappuccino-italiano.jpg" class="card-img-top product-img" alt="Cappuccino Artesanal">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="card-title h5 mb-0 fw-bold">Cappuccino Italiano</h4>
+                                    <span class="price-badge fs-5 fw-bold">$ 13.000</span>
+                                </div>
+                                <p class="card-text text-muted flex-grow-1">Textura sedosa y espuma densa. Un equilibrio perfecto entre nuestro espresso de especialidad y leche vaporizada artesanalmente.</p>
+                                <span class="badge quality-badge align-self-start"><i class="bi bi-patch-check-fill me-1"></i>100% Leche Local</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm product-card">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" class="card-img-top product-img" alt="Café Latte">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="card-title h5 mb-0 fw-bold">Café Latte Suave</h4>
+                                    <span class="price-badge fs-5 fw-bold">$ 10.000</span>
+                                </div>
+                                <p class="card-text text-muted flex-grow-1">Suave y reconfortante. Una base ligera de café espresso cubierta con una generosa capa de leche cremosa, ideal para acompañar las mañanas.</p>
+                                <span class="badge quality-badge align-self-start"><i class="bi bi-patch-check-fill me-1"></i>Origen Único</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="category-block mb-5">
+                <h3 class="category-title mb-4"><i class="bi bi-snow2 me-2"></i>Especialidades Frías</h3>
+                <div class="row g-4">
+                    
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm product-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjBM2fZeOVtUtZ6Bp9RmXZA7UP2m4_UZQ8w&s" class="card-img-top product-img" alt="Cold Brew Artesanal">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="card-title h5 mb-0 fw-bold">Cold Brew de la Casa</h4>
+                                    <span class="price-badge fs-5 fw-bold">$ 18.000</span>
+                                </div>
+                                <p class="card-text text-muted flex-grow-1">Extracción lenta de 12 horas en frío. Este proceso artesanal resalta las notas más dulces y cítricas del grano, reduciendo la acidez para una frescura inigualable.</p>
+                                <span class="badge quality-badge align-self-start"><i class="bi bi-clock-history me-1"></i>12h Maceración</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm product-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU87FdmflQA_9QDyY16HWu4bLur5UmRjKLVw&s" class="card-img-top product-img" alt="Frappé de Café">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="card-title h5 mb-0 fw-bold">Frappé de Especialidad</h4>
+                                    <span class="price-badge fs-5 fw-bold">$ 15.000</span>
+                                </div>
+                                <p class="card-text text-muted flex-grow-1">Deliciosa mezcla granizada con nuestro concentrado de café artesanal, leche premium y un toque sutil de crema batida en la cima.</p>
+                                <span class="badge quality-badge align-self-start"><i class="bi bi-star-fill me-1"></i>El Favorito del Verano</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </section>
+
+    <section class="order-section py-5 text-white" id="orden">
+        <div class="container container-custom py-4">
+            <h2 class="section-title text-center text-uppercase display-5 fw-bold mb-5 text-dark">Orden de compra</h2>
+            
+            <div class="order-card p-4 p-md-5 rounded shadow-lg text-dark mx-auto" style="max-width: 900px;">
+                <div class="table-responsive">
+                    <table class="table align-middle custom-table">
+                        <thead>
+                            <tr class="text-center text-white">
+                                <th scope="col" class="text-start">Producto +</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-price="6000">
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=150&auto=format&fit=crop&q=60" alt="Croissant" class="order-item-img rounded shadow-sm">
+                                        <span class="fw-semibold">Croissant</span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-quantity minus-btn">-</button>
+                                        <span class="fw-bold quantity-val">0</span>
+                                        <button type="button" class="btn btn-sm btn-quantity plus-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="text-center fw-medium">$ 6.000</td>
+                                <td class="text-center fw-bold row-total">$ 0</td>
+                            </tr>
+
+                            <tr data-price="8000">
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Espresso" class="order-item-img rounded shadow-sm">
+                                        <span class="fw-semibold">Espresso</span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-quantity minus-btn">-</button>
+                                        <span class="fw-bold quantity-val">0</span>
+                                        <button type="button" class="btn btn-sm btn-quantity plus-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="text-center fw-medium">$ 8.000</td>
+                                <td class="text-center fw-bold row-total">$ 0</td>
+                            </tr>
+
+                            <tr data-price="18000">
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Cheesecake" class="order-item-img rounded shadow-sm">
+                                        <span class="fw-semibold">Cheesecake</span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-quantity minus-btn">-</button>
+                                        <span class="fw-bold quantity-val">0</span>
+                                        <button type="button" class="btn btn-sm btn-quantity plus-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="text-center fw-medium">$ 18.000</td>
+                                <td class="text-center fw-bold row-total">$ 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mt-4 pt-3 border-top border-dark border-2">
+                    <div class="fs-4 fw-bold text-dark mb-3 mb-sm-0">
+                        Valor total: <span id="grandTotal">$ 0</span>
+                    </div>
+                    <button type="button" class="btn btn-confirm px-5 py-2 fw-bold text-white text-uppercase rounded shadow-sm" id="btnConfirmOrder">Confirmar</button>
+                </div>
+
+                <div class="alert alert-success mt-3 text-center d-none" id="orderAlert" role="alert">
+                    ¡Tu orden ha sido registrada con éxito! El barista ya está preparando tus delicias. ☕✨
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section py-5 text-white" id="nosotros">
+        <div class="container container-custom py-4">
+            <div class="row align-items-center g-5">
+                
+                <div class="col-12 col-lg-7">
+                    <h2 class="about-title text-uppercase mb-4 display-5 fw-bold tracking-wide">Nosotros</h2>
+                    
+                    <div class="about-text-container d-flex flex-column gap-3">
+                        <p class="lead-text m-0">
+                            En <strong>"Origen Café"</strong> creemos que una taza de café es mucho más que una bebida; es una experiencia que conecta historias, tradiciones y momentos especiales. Nuestra cafetería nace con el propósito de resaltar la riqueza del café colombiano, ofreciendo productos elaborados con granos seleccionados cuidadosamente de diferentes regiones del país.
+                        </p>
+                        
+                        <p class="m-0">
+                            Nos apasiona brindar un ambiente cálido, moderno y acogedor, donde cada visitante pueda disfrutar de sabores auténticos mientras comparte tiempo con amigos, familia o incluso consigo mismo. Cada detalle de nuestro espacio y de nuestros productos está pensado para transmitir la esencia artesanal y la calidad que caracteriza al café de origen.
+                        </p>
+                        
+                        <p class="m-0">
+                            Además de ofrecer bebidas y productos de alta calidad, buscamos apoyar y visibilizar el trabajo de los caficultores colombianos, promoviendo el consumo responsable y el valor cultural del café nacional.
+                        </p>
+                        
+                        <p class="fw-medium text-accent m-0">
+                            En "Origen Café" no solo servimos café, creamos experiencias que inspiran, acompañan y dejan huella en cada cliente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 text-center">
+                    <div class="about-img-wrapper position-relative shadow-lg rounded">
+                        <img src="https://images.pexels.com/photos/4349728/pexels-photo-4349728.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Barista preparando café artesanal en Origen Café" 
+                             class="img-fluid rounded about-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<section class="scrum-section py-5" id="scrum">
+    <div class="container container-custom">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title display-5 fw-bold">
+                Evolución del Proyecto con Scrum
+            </h2>
+
+            <p class="section-subtitle">
+                El desarrollo de Origen Café se organizó en tres Sprints,
+                permitiendo entregar valor de forma progresiva y mejorar la experiencia del usuario.
+            </p>
+
+            <div class="title-divider mx-auto"></div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold">Sprint 1</h4>
+                        <p>
+                            Diseño de la interfaz principal,
+                            navegación y estructura general del sitio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold">Sprint 2</h4>
+                        <p>
+                            Implementación del menú digital,
+                            sistema de reservas y mejoras visuales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold">Sprint 3</h4>
+                        <p>
+                            Desarrollo de la orden de compra,
+                            pruebas de usuario y optimización responsive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="booking-section py-5 text-white" id="reservas">
+        <div class="container container-custom py-4">
+            <div class="row align-items-center g-5">
+                
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="booking-img-wrapper shadow-lg rounded">
+                        <img src="https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Sirviendo café artesanal caliente" 
+                             class="img-fluid rounded booking-img">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="booking-card p-4 p-md-5 rounded shadow-lg text-dark">
+                        <h3 class="booking-card-title text-center text-uppercase fw-bold mb-4">Reservar tu mesa</h3>
+                        
+                        <form id="reservationForm">
+                            <div class="mb-3">
+                                <label for="clientName" class="form-label fw-medium">Nombre:</label>
+                                <input type="text" class="form-control custom-input" id="clientName" required placeholder="Tu nombre completo">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="reserveDate" class="form-label fw-medium">Fecha:</label>
+                                <input type="date" class="form-control custom-input" id="reserveDate" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="reserveTime" class="form-label fw-medium">Hora:</label>
+                                <input type="time" class="form-control custom-input" id="reserveTime" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="guestCount" class="form-label fw-medium">Personas:</label>
+                                <select class="form-select custom-input" id="guestCount" required>
+                                    <option value="" disabled selected>Selecciona cantidad</option>
+                                    <option value="1 persona">1 Persona</option>
+                                    <option value="2 personas">2 Personas</option>
+                                    <option value="3 personas">3 Personas</option>
+                                    <option value="4 personas">4 Personas</option>
+                                    <option value="5+ personas">5 o más Personas</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-reserve w-100 py-2.5 text-white fw-bold rounded shadow-sm text-uppercase">Reservar</button>
+                        </form>
+
+                        <div id="confirmationMessage" class="alert alert-success mt-4 text-center d-none" role="alert">
+                            <h5 class="alert-heading fw-bold mb-2">¡Reserva Confirmada! 🎉</h5>
+                            <hr>
+                            <p class="mb-0 text-start">
+                                <strong>Cliente:</strong> <span id="confName"></span><br>
+                                <strong>Fecha:</strong> <span id="confDate"></span><br>
+                                <strong>Hora:</strong> <span id="confTime"></span><br>
+                                <strong>Mesa para:</strong> <span id="confGuests"></span>
+                            </p>
+                            <p class="mt-3 small text-muted mb-0">¡Te esperamos para vivir la experiencia Origen Café!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue solo
+
+            // 1. Captura los datos que escribió el cliente
+            const name = document.getElementById('clientName').value;
+            const date = document.getElementById('reserveDate').value;
+            const time = document.getElementById('reserveTime').value;
+            const guests = document.getElementById('guestCount').value;
+
+            // 2. Coloca los datos capturados dentro del cuadro de confirmación
+            document.getElementById('confName').textContent = name;
+            document.getElementById('confDate').textContent = date;
+            document.getElementById('confTime').textContent = time;
+            document.getElementById('confGuests').textContent = guests;
+
+            // 3. Muestra el cuadro verde de confirmación quitando la clase que lo oculta
+            document.getElementById('confirmationMessage').classList.remove('d-none');
+            
+            // 4. Limpia el formulario para que quede listo para otra reserva
+            document.getElementById('reservationForm').reset();
+        });
+        // --- LÓGICA DE LA ORDEN DE COMPRA ---
+        document.querySelectorAll('.order-card tbody tr').forEach(row => {
+            const price = parseInt(row.getAttribute('data-price'));
+            const plusBtn = row.querySelector('.plus-btn');
+            const minusBtn = row.querySelector('.minus-btn');
+            const qtyVal = row.querySelector('.quantity-val');
+            const rowTotal = row.querySelector('.row-total');
+
+            let quantity = 0;
+
+            // Al hacer clic en el botón de más (+)
+            plusBtn.addEventListener('click', () => {
+                quantity++;
+                updateRow();
+            });
+
+            // Al hacer clic en el botón de menos (-)
+            minusBtn.addEventListener('click', () => {
+                if (quantity > 0) {
+                    quantity--;
+                    updateRow();
+                }
+            });
+
+            // Función para actualizar los totales individuales de cada producto
+            function updateRow() {
+                qtyVal.textContent = quantity;
+                let totalRowPrice = quantity * price;
+                rowTotal.textContent = `$ ${totalRowPrice.toLocaleString('es-CO')}`;
+                calculateGrandTotal();
+            }
+        });
+
+        // Función global para calcular la suma de toda la tabla
+        function calculateGrandTotal() {
+            let grandTotal = 0;
+            document.querySelectorAll('.order-card tbody tr').forEach(row => {
+                const price = parseInt(row.getAttribute('data-price'));
+                const quantity = parseInt(row.querySelector('.quantity-val').textContent);
+                grandTotal += price * quantity;
+            });
+            document.getElementById('grandTotal').textContent = `$ ${grandTotal.toLocaleString('es-CO')}`;
+        }
+
+        // Evento del botón de Confirmar la compra
+        document.getElementById('btnConfirmOrder').addEventListener('click', () => {
+            const totalText = document.getElementById('grandTotal').textContent;
+            if (totalText === "$ 0") {
+                alert("Por favor, selecciona al menos un producto antes de confirmar.");
+            } else {
+                const alertBox = document.getElementById('orderAlert');
+                alertBox.classList.remove('d-none');
+                setTimeout(() => { alertBox.classList.add('d-none'); }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
