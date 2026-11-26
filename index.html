@@ -230,7 +230,7 @@
                     <div class="fs-4 fw-bold text-dark mb-3 mb-sm-0">
                         Valor total: <span id="grandTotal">$ 0</span>
                     </div>
-                    <button type="button" class="btn btn-confirm px-5 py-2 fw-bold text-white text-uppercase rounded shadow-sm" id="btnConfirmOrder">Confirmar</button>
+                    <button type="button" class="btn btn-outline-dark px-4 py-2 fw-bold mb-2 mb-sm-0" id="btnClearOrder">Vaciar orden</button>
                 </div>
 
                 <div class="alert alert-success mt-3 text-center d-none" id="orderAlert" role="alert">
@@ -453,12 +453,16 @@
             });
 
             // Función para actualizar los totales individuales de cada producto
-            function updateRow() {
-                qtyVal.textContent = quantity;
-                let totalRowPrice = quantity * price;
-                rowTotal.textContent = `$ ${totalRowPrice.toLocaleString('es-CO')}`;
-                calculateGrandTotal();
-            }
+            // function updateRow() {
+                //qtyVal.textContent = quantity;
+                //let totalRowPrice = quantity * price;
+                //rowTotal.textContent = `$ ${totalRowPrice.toLocaleString('es-CO')}`;
+                //calculateGrandTotal(); 
+            //}
+            document.getElementById('btnClearOrder').addEventListener('click', () => {
+    quantity = 0;
+    updateRow();
+    document.getElementById('orderAlert').classList.add('d-none');
         });
 
         // Función global para calcular la suma de toda la tabla
