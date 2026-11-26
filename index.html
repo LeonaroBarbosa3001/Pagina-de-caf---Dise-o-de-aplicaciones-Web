@@ -400,9 +400,13 @@
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        const hoy = new Date();
+        hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+        document.getElementById('reserveDate').min = hoy.toISOString().split('T')[0];
+
         document.getElementById('reservationForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita que la página se recargue solo
 
